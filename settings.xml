@@ -5,32 +5,32 @@
 
   <servers>
     <server>
-      <id>${SNAP-REPO}</id>
-      <username>${NEXUS-USER}</username>
-      <password>${NEXUS-PASS}</password>
+      <id>NEXUS-VPROFILE-REPO-SNAP</id>
+      <username>admin</username>
+      <password>password</password>
     </server>
     <server>
-      <id>${RELEASE-REPO}</id>
-      <username>${NEXUS-USER}</username>
-      <password>${NEXUS-PASS}</password>
+      <id>NEXUS-VPROFILE-REPO-RELEASE</id>
+      <username>admin</username>
+      <password>password</password>
     </server>
         <server>
-        <id>${CENTRAL-REPO}</id>
-      <username>${NEXUS-USER}</username>
-      <password>${NEXUS-PASS}</password>
+        <id>NEXUS-VPROFILE-REPO-MIXED</id>
+      <username>admin</username>
+      <password>password</password>
     </server>
     <server>
-        <id>${NEXUS-GRP-REPO}</id>
-      <username>${NEXUS-USER}</username>
-      <password>${NEXUS-PASS}</password>
+        <id>NEXUS-VPROFILE-REPO-RELEASE</id>
+      <username>admin</username>
+      <password>password</password>
     </server>
   </servers>
 
   <mirrors>
     <mirror>
-      <id>${CENTRAL-REPO}</id>
-      <name>${CENTRAL-REPO}</name>
-      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
+      <id>NEXUS-VPROFILE-REPO-MIXED</id>
+      <name>NEXUS-VPROFILE-REPO-MIXED</name>
+      <url>http://13.232.230.135:8081/repository/NEXUS-VPROFILE-REPO-MIXED/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
